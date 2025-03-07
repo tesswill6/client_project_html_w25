@@ -46,6 +46,7 @@ img{
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #00274c;
+    background-color: #edecec;
 }
 h1, h2, h3{
     text-transform: uppercase;
