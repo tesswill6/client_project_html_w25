@@ -47,11 +47,106 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #00274c;
 }
-h1, h2{
+h1, h2, h3{
     text-transform: uppercase;
 }
 h1{
     text-align: center;
     color: #FFCB05;
     background-color: #00274c;
+    padding: 5px;
+}
+
+figcaption{
+    background-color: #00274c;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    font-size: 13px;
+}
+
+.mh_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.counseling, .wellness, .mind, .support{
+    background-color: #00274c;
+    padding: 5px;
+    h3{
+        color: white;
+    }
+    p{
+        color: #FFCB05;
+    }
+}
+
+.resources {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.academic, .health, .community {
+    position: relative;
+    background-color: #FFCB05;
+    padding: 30px;
+    color: #00274c;
+}
+.overlaya, .overlayh, .overlayc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #00274c;
+}
+.texta{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.texth{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.textc {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.academic:hover .overlaya,
+.health:hover .overlayh,
+.community:hover .overlayc {
+    opacity: 1;
+}
+
+footer{
+    background-color: #00274c;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px;
+}
+footer a {
+    color: #FFCB05;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    text-decoration: underline;
 }
