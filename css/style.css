@@ -191,7 +191,7 @@ footer a:hover, footer a:focus {
     }
     .logo {
         display: initial;
-        content: url("/images/UMSI_signature_marketing_U_white.png");
+        content: url(".../images/UMSI_signature_marketing_U_white.png");
         width: 60%;
     }
     
