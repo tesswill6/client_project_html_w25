@@ -7,7 +7,7 @@
     top: 20px;
 }
 
-nav a:hover, nav a:focus{
+nav a:hover, nav a:focus, nav a.active{
     text-decoration: underline;
     color: blue;
 }
@@ -34,6 +34,20 @@ nav ul li a {
     display: block;
 }
 
+.error{
+    font-size: 1000%;
+    margin: 0;
+    padding: 0;
+}
+.error-container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.victor{
+    width: 40%;
+}
+
 .logo{
     display: block;
     margin-left: auto;
@@ -56,6 +70,14 @@ h1{
     color: #FFCB05;
     background-color: #00274c;
     padding: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
 }
 
 figcaption{
@@ -152,4 +174,71 @@ footer a{
 footer a:hover, footer a:focus {
     text-decoration: underline;
     color: white;
+}
+
+.girls img{
+    width: span; height: 500px; object-fit: cover;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    nav {
+        content: "University of Michigan"
+    }
+    nav ul li a {
+        font-size: 160%;
+    }
+    .logo {
+        display: initial;
+        content: url("/images/UMSI_signature_marketing_U_white.png");
+        width: 60%;
+    }
+    
+    .umich{
+        display: none;
+    }
+    header div{
+        background-color: #00274c;
+        padding: 10px;
+    }
+
+    .texta{
+        font-size: 100%;
+        column-count: 2;
+        column-span: 120%;
+        left: 31%;
+    }
+    .texth{
+        font-size: 100%;
+        column-count: 2;
+        column-span: 120%;
+        left: 34%;
+
+    }
+    .textc {
+        font-size: 100%;
+        left: 11%;
+    }
+
+    .grid{
+        display: flex;
+        flex-basis: auto;
+        align-items: center;
+    }
+    .grid:nth-child(1){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .grid img{
+        width: 50vw;
+    }
+    
+    .law{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

@@ -10,12 +10,15 @@
 <body>
     <a class = "skip" href="#main">Skip to Main content</a>
     <header>
-        <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div>
+            <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <h1 class="umich">Univeristy of Michigan <br>School of Information</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "academic_advising.html">Academic Adivings</a></li>
-                <li><a href = "student_success.html">Student Success</a></li>
+                <li><a href = "student_success.html" class="active">Student Success</a></li>
                 <li><a href = "tutoring_site.html">Tutoring Sites</a></li>
             </ul>
         </nav>
@@ -23,20 +26,26 @@
 
     </header>
     <main id="main" tabindex="0">
-        <figure>
+        <figure class="law">
             <img src="images/MCOMMONS-FallColors1108-UPDATED.jpg" alt="Fall Image of Law Quad">
             <figcaption>Law Quad in the Fall</figcaption>
         </figure>
-        <div>
-            <h2>Get the Support you need at UMich</h2>
-            <p>The purpose of this page is to help direct you to resources that may help you in many areas of your academic life. If you have any questions about utilizing these resources please contact your Advising Team!</p>
+        <div class="grid">
+            <div>
+                <h2>Get the Support you need at UMich</h2>
+                <p>At the University of Michigan, your academic success and well-being are our top priorities. We understand that navigating university life can come with challenges, whether they are academic, personal, or professional. This page is designed to help you access the essential resources that will support you throughout your academic journey.
+                <br>
+                <br>
+                If you ever feel unsure about how to utilize these resources, or if you have any questions, don’t hesitate to contact your Advising Team. They’re here to guide you and help you make the most of all the support available.</p>
 
-        </div>
-        <div>
-            <figure>
+            </div>
+        
+            <figure class="girls">
                 <img src="images/MCOMMONS-WinterSemester2025-UPDATED.jpg" alt="Two girls eating in a study study space">
                 <figcaption>Find your Favorite Study Space</figcaption>
             </figure>
+        </div>
+        <div>
             <h2>Resources for You!</h2>
             <section class="resources">
                 <div tabindex="0" class="academic">
@@ -89,8 +98,12 @@
         </div>
     </main>
     <footer>
-        <p>BSI Student Success | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Student Success</a></p>
+        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>       
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

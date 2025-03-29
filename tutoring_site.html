@@ -10,49 +10,67 @@
 <body>
     <a class = "skip" href="#main">Skip to Main content</a>
     <header>
-        <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div>
+            <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <h1 class="umich">Univeristy of Michigan <br>School of Information</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "academic_advising.html">Academic Adivings</a></li>
                 <li><a href = "student_success.html">Student Success</a></li>
-                <li><a href = "tutoring_site.html">Tutoring Sites</a></li>
+                <li><a href = "tutoring_site.html" class="active">Tutoring Sites</a></li>
             </ul>
         </nav>
         <h1>Tutoring Sites at UMSI</h1>
 
     </header>
     <main id="main" tabindex="0">
-        <figure>
-            <img src="images/UMSI_AR_VR_CLASS_UPDATED.jpg" alt="Group of students learning from a teacher">
-            <figcaption>Group Learning Session</figcaption>
-        </figure>
-        <h2>Find Your Style of Learning</h2>
-        <div>
-            <p>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom. This site is dedicated to connecting students to tutoring and academic support resources. Resources covered on this site include:</p>
+        <div class="grid">
+            <figure>
+                <img src="images/UMSI_AR_VR_CLASS_UPDATED.jpg" alt="Group of students learning from a teacher">
+                <figcaption>Group Learning Session</figcaption>
+            </figure>
+            <div>
+                <h2>Find Your Style of Learning</h2>
+                <div>
+                    <p>The Academic Success Team at the University of Michigan School of Information (UMSI) is committed to supporting you both inside and outside of the classroom. Our team understands that every student has a unique learning style and we’re here to help you discover the best resources to help you succeed.
+                    <br>
+                    <br>
+                    This site is designed to connect you with a variety of tutoring and academic support resources. Whether you're seeking help with specific courses or looking for general academic guidance, we’ve got you covered. Explore the following resources to find the support that best aligns with your learning needs:</p>
+                </div>
+                <div tabindex="0">
+                    <ul>
+                        <li>UMSI Peer Tutoring</li>
+                        <li>Programming Peer Tutoring</li>
+                        <li>Math Peer Tutoring</li>
+                        <li>Additional Academic Support Resources</li>
+                        <li>Link to the Peer-to-Peer Tutor Directory</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div tabindex="0">
-            <ul>
-                <li>UMSI Peer Tutoring</li>
-                <li>Programming Peer Tutoring</li>
-                <li>Math Peer Tutoring</li>
-                <li>Additional Academic Support Resources</li>
-                <li>Link to the Peer-to-Peer Tutor Directory</li>
-            </ul>
-        </div>
+        <div class="grid">
             <figure>
                 <img src="images/UMSI_MHIClassroom_02202023_UPDATED.jpg" alt="One student helping another student with their work">
                 <figcaption>Students Helping Each Other</figcaption>
             </figure>
-            
-        <div tabindex="0">
-            <h2>UMSI Peer Tutoring Program</h2>
-            <p>In partnership with our UMSI faculty, the UMSI Peer Tutoring program is an opportunity for UMSI students and students taking UMSI courses to engage with peer tutors and receive assistance and support in UMSI courses. Get the help you need from a student that might be able to help you understand the problems more than a professor would.</p>
+            <div tabindex="0">
+                <h2>UMSI Peer Tutoring Program</h2>
+                <p>In partnership with UMSI faculty, the UMSI Peer Tutoring Program offers students the chance to receive academic assistance and support in UMSI courses from their peers. This program is designed to create a collaborative learning environment where students can engage with peer tutors who have excelled in the same courses. Peer tutors provide guidance, clarify concepts, and offer valuable insights that can help you understand difficult topics in ways that may resonate more effectively than traditional lectures.
+                <br>
+                <br>
+                Whether you’re grappling with complex theories or need help with specific assignments, UMSI Peer Tutors are here to help you strengthen your understanding and succeed in your courses.</p>
+            </div>
         </div>
     </main>
     <footer>
-        <p>BSI Tutoring Support | <a href="https://sites.google.com/umich.edu/umsitutoring/home">UMSI Tutoring Supoort</a></p>
+        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>       
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

@@ -1,3 +1,4 @@
+<!-- for most of the content within my website I use chatGPT to added more content so tha it would look better in the website -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,13 @@
 <body>
     <a class = "skip" href="#main">Skip to Main content</a>
     <header>
-        <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div>
+            <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <h1 class="umich">Univeristy of Michigan <br>School of Information</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li><a href = "index.html" class="active">Home</a></li>
                 <li><a href = "academic_advising.html">Academic Adivings</a></li>
                 <li><a href = "student_success.html">Student Success</a></li>
                 <li><a href = "tutoring_site.html">Tutoring Sites</a></li>
@@ -38,24 +42,45 @@
         <section>
             <div tabindex="0">
                 <h2>Physical </h2>
-                <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+                <p class="center">Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             </div>
-            <article tabindex="0">
-                <h3>University Health Service (UHS)</h3>
+            <div tabindex="0" class="grid">
+                
                 <figure>
                     <img src="images/UHS.jpg" alt="University Health Services building">
                     <figcaption>University Health Services Building</figcaption>
                 </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
-            </article>
-            <article tabindex="0">
-                <h3>Recreational Sports</h3>
+                <div>
+                    <h3>University Health Service (UHS)</h3>
+                    <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals. UHS offers students and staff a wide range of medical services to ensure optimal health and well-being. These services include: 
+                    </p>
+                    <ul>
+                        <li>Routine Check-ups: Preventive care to keep you healthy and address any concerns early.</li>
+                        <li>Vaccinations: Stay protected with routine immunizations required for college life, including flu shots and travel vaccines.</li>
+                        <li>Specialist Referrals: Access to specialized care and medical professionals for more specific health needs.</li>
+                        <li>Mental Health Support: Counseling and mental health resources for stress management and emotional well-being.</li>
+                        <li>Urgent Care: Immediate care for injuries or illnesses that require quick attention.</li>
+                        <li>Health Education: Resources to promote healthy living, including nutrition, exercise, and lifestyle management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div tabindex="0" class="grid">
                 <figure>
                     <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
                     <figcaption>UMSI Out in the Fall</figcaption>
                 </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
-            </article>
+                <div>
+                    <h3>Recreational Sports</h3>
+                    <p>Stay active and engaged with the wide variety of recreational sports and fitness opportunities offered by University of Michigan Recreational Sports. Whether you're looking to stay fit, compete, or simply have fun, U-M provides numerous ways to keep moving and lead a healthy lifestyle. Available programs include:</p>
+                    <ul>
+                        <li>Fitness Classes: Participate in group fitness classes such as yoga, cycling, Zumba, pilates, strength training, and more. Classes are designed for all levels, from beginners to advanced fitness enthusiasts.</li>
+                        <li>Sports Clubs: Join one of the many student-run sports clubs that cater to a wide variety of interests. Whether you’re into basketball, soccer, tennis, or even ultimate frisbee, there’s a club for you to join.</li>
+                        <li>State-of-the-Art Gym Facilities: Access to the Central Campus Recreation Building (CCRB) and Intramural Sports Building (IMSB), featuring extensive gym equipment, weight rooms, cardio machines, and specialized fitness areas.</li>
+                        <li>Intramural Leagues: Compete in intramural leagues in a variety of sports including basketball, flag football, soccer, and volleyball. Whether you’re playing for fun or striving for the championship, it’s a great way to build camaraderie and stay fit.</li>
+                        <li>Personal Training and Wellness Coaching: Certified personal trainers and wellness coaches are available to help you achieve your fitness goals, offering tailored workout plans, nutritional advice, and support.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
         <section tabindex="0">
@@ -104,6 +129,10 @@
     UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     <footer>
         <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>       
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

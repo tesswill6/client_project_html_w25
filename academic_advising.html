@@ -10,11 +10,14 @@
 <body>
     <a class = "skip" href="#main">Skip to Main content</a>
     <header>
-        <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div>
+            <img class = logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <h1 class="umich">Univeristy of Michigan <br>School of Information</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "adcademic_advising.html">Academic Adivings</a></li>
+                <li><a href = "adcademic_advising.html" class="active">Academic Adivings</a></li>
                 <li><a href = "student_success.html">Student Success</a></li>
                 <li><a href = "tutoring_site.html">Tutoring Sites</a></li>
             </ul>
@@ -23,27 +26,43 @@
 
     </header>
     <main id="main" tabindex="0">
-        <figure>
-            <img src="images/UMSI_CCSIdesignjam_UPDATED.jpg" alt="Group of 4 students taking a photo at The Diag M">
-            <figcaption>The Diag</figcaption>
-        </figure>
-        <div tabindex="0">
-            <h2>Find your Home at Michigan</h2>
-            <p>Academic Advising is a process where students envision, execute, and reflect on their academic plans with guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and questions with their academic advisor, and their academic advisor contributes knowledge of university and program requirements, policies, and processes. Together, we develop an academic plan that aligns with the student's personal and professional goals.</p>
-
+        <div tabindex="0" class="grid">
+            <figure>
+                <img src="images/UMSI_CCSIdesignjam_UPDATED.jpg" alt="Group of 4 students taking a photo at The Diag M">
+                <figcaption>The Diag</figcaption>
+            </figure>
+            <div>
+                <h2>Find your Home at Michigan</h2>
+                <p>At the University of Michigan School of Information (UMSI), academic advising is a collaborative process designed to support your academic, professional, and personal growth. Our team of experienced, knowledgeable, and approachable academic advisors is here to help you navigate your journey and make the most out of your time at UMSI.</p>
+                <h3>What is Academic Advising?</h3>
+                <p>Academic advising at UMSI is a dynamic and personalized experience where you, as a student, work closely with a qualified UMSI Academic Advisor to craft a plan that fits your aspirations. It's not just about choosing courses; it's about envisioning your future, overcoming challenges, and staying on track to meet your long-term goals. Together, you’ll develop a plan that aligns with both your academic requirements and your personal ambitions.</p>
+            </div>
         </div>
-        <div tabindex="0">
+        <div tabindex="0" class="grid">
             <figure>
                 <img src="images/MCOMMONS-ShaprioPartyForYourMind-UPDATED.jpg" alt="Girl taking a photo with M">
                 <figcaption>Photo Opportunities Across Campus</figcaption>
             </figure>
-            <h2>Winter 2025 Important Dates</h2>
-                <ul>
-                    <li>January 28: Add/Drop Deadline for Winter 2025 full-term courses</li>
-                    <li>March 1-9: Spring Break</li>
-                    <li>March 19: Backpacking Begins</li>
-                    <li>March 26-28: Registration for Graduate Students Begins</li>
-                </ul>
+            <div>
+                <h2>Winter 2025 Important Dates</h2>
+                    <ul>
+                        <li>January 28: Add/Drop Deadline for Winter 2025 full-term courses</li>
+                        <li>March 1-9: Spring Break</li>
+                        <li>March 19: Backpacking Begins</li>
+                        <li>March 26-28: Registration for Graduate Students Begins</li>
+                    </ul>
+                <br>
+                <h2>Fall 2025 Important Dates</h2>
+                    <ul>
+                        
+                        <li>August 25: Classes Begin</li>
+                        <li>September 1: Labor Day (Holiday)</li>
+                        <li>October 13-14: Fall Study Break</li>
+                        <li>November 26-28: Thanksgiving Recess</li>
+                        <li>December 8: Classes End</li>
+                        <li>December 10-12, 15-17: Examinations</li>
+                    </ul>
+            </div>
         </div>    
         <div tabindex="0">
             <h2>Requirements for BSI</h2>
@@ -52,7 +71,11 @@
     </main>
     <footer>
         <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>       
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 
