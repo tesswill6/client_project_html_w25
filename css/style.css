@@ -53,6 +53,7 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    content: url(/images/UMSI_signature_vertical_informal_solidblue.jpg);
 }
 img{
     width: 100%;
@@ -191,7 +192,7 @@ footer a:hover, footer a:focus {
     }
     .logo {
         display: initial;
-        content: url("/images/UMSI_signature_marketing_U_white.png");
+        content: url(/images/UMSI_signature_marketing_U_white.png);
         width: 60%;
     }
     
